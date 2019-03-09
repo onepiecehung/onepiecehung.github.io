@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.min.css">
+    </head>
+    <style>
+            body, html {
+                margin: 0;
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+    <body>
+        <pixie-editor></pixie-editor>
+    ​
+        <script src="scripts.min.js"></script>
+    ​
+        <script>
+            var pixie = new Pixie({
+                onLoad: function() {
+                    console.log('Pixie is ready');
+                }
+            });
+        </script>
+    </body>
+</html>
