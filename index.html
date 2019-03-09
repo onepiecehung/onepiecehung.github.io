@@ -52,12 +52,23 @@
 <script src="scripts.min.js?v19"></script>
 
 <script>
+	var pixie = new Pixie({
+		urls: {
+			base: 'https://chinhsuaanh.cf/',
+			assets: 'https://chinhsuaanh.cf/assets'
+		},
+		onLoad: function() {
+			console.log('Pixie is ready');
+		}
+	});
+	/*
     var pixie = new Pixie({
     	watermarkText: 'Pixie Demo',
     	onLoad: function() {
     		window.postMessage('pixieLoaded', '*');
     	},
     });
+	*/
 </script>
 </body>
 </html>
